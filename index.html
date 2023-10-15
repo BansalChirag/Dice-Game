@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1> Game rules : </h1>
+        <ol>
+            <li>
+                Roll the dice to increase your current score.
+            </li>
+            <li>
+                Rolling a 1 resets your current score to 0, passing the turn.
+            </li>
+            <li>
+                Hold your current score to add it to your total score.
+            </li>
+            <li>
+                The first player to reach a total score of 50 wins.
+            </li>
+        </ol>
+        <div class="btn--container">
+            <button class="btn btn--play">🎭Play</button>
+        </div>
+    </div>
+    <main class="main hidden">
+        <div class="player player--0 player--active">
+            <h2 class="name" id="name--0">Player 1</h2>
+            <span class="score" id="score--0">0</span>
+            <div class="current">
+                <p class="current-label">current</p>
+                <p class="current-score" id="current--0">0</p>
+            </div>
+        </div>
+        <div class="player player--1 ">
+            <h2 class="name" id="name--1">Player 2</h2>
+            <span class="score" id="score--1">0</span>
+            <div class="current">
+                <p class="current-label">current</p>
+                <p class="current-score" id="current--1">0</p>
+            </div>
+        </div>
+        <img src="dice-3.png" alt="dice" class="dice">
+        <button class="btn btn--new">🔄️ new game</button>
+        <button class="btn btn--roll"> 🎲 roll dice</button>
+        <button class="btn btn--hold">📥 Hold</button>
+         
+        <button class="btn btn--quit">🛑 Quit</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
